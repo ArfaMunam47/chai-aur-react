@@ -1,21 +1,23 @@
 
-function custom(reactElement,root){
-    const domElement= document.createElement(reactElement.type);
-    domElement.innerHTML= reactElement.children;
-    domElement.setAttribute('href',reactElement.props.href);
-    domElement.setAttribute('target',reactElement.props.target);
-    root.appendChild(domElement);
-};
+function check(reactElement,container){
+    const domElement= document.createElement(reactElement.type)
+    // domElement.setAttribute('href',reactElement.prop.href)
+    // domElement.setAttribute('target',reactElement.prop.target)
+for (const prop in reactElement.props){
+    if(prop == 'reactElement.props') continue
+    domElement.setAttribute(prop,reactElement.props[prop])
+}
+domElement.innerHTML=reactElement.children
+root.appendChild(domElement)
+}
 
 const reactElement={
     type:'a',
     props:{
-        href:'https://www.w3schools.com',
-        target:'_blank',
+        href:'https://www.w3school.com',
+        target:'_blank'
     },
-    children:'Click here to visit W3Schools.com!!!',
+    children:'click me to visit the actual site and it will open in a new tab'
 }
-
-
 const root= document.querySelector('#root')
-custom(reactElement,root)
+check(reactElement,root)
