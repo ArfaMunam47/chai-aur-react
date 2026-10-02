@@ -1,5 +1,5 @@
 
-import Check from './check'
+import Check from './Check'
 function New(){
     return(
         <Check />

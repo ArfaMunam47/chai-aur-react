@@ -1,5 +1,5 @@
 
-import New from './new'
+import New from './New.jsx'
 function App() {
   return (
 <New />
