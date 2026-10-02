@@ -1,10 +1,9 @@
 
 import New from './new'
-
 function App() {
   return (
-    <New/>
+<New />
   )
 }
 
-export default App
+export default App;

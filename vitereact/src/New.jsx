@@ -1,8 +1,7 @@
 
-function New() {
-  return (
-  <h1>Practicing new file making | chai aur react</h1>
-  )
+function New(){
+    return(
+        <h1>This took my 2 days to understand the basics! </h1>
+    )
 }
-
-export default New
+export default New;
