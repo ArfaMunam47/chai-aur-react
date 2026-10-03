@@ -2,8 +2,7 @@ import React from 'react'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
-import JSX from './JSX.jsx'
-
+import { jsx as _jsx } from 'react/jsx-runtime'
 // function NewApp(){
 //   return(
 //     <a href="https://www.w3school.com">Visit To Learn More</a>
