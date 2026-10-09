@@ -25,7 +25,7 @@ createRoot(document.getElementById('root')).render(
     </button>
   </div>
 </div>
-<img class="aspect-1/1 object-cover" src="Untitled2.jpg" />
+<img class="aspect-2/3 object-cover" src="Untitled2.jpg" />
 
 
 
