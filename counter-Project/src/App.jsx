@@ -9,12 +9,20 @@ function App() {
 //  let counter = 10
 const addValue =() =>{
   console.log('Clicked', counter)
-  let addVal= counter + 1
-  if(addVal<=20){
-setCounter(addVal)
-  }else{
-    alert('Cannot be a number greater than 20')
-  }
+  //................... interview qs react 
+  setCounter(prevCounter=> prevCounter + 1)
+  setCounter(prevCounter=> prevCounter + 1)
+  setCounter(prevCounter=> prevCounter + 1)
+  setCounter(prevCounter=> prevCounter + 1)
+//  setCounter(counter + 1)
+//  setCounter(counter + 1)
+//  setCounter(counter + 1)
+//   let addVal= counter + 1
+//   if(addVal<=20){
+// setCounter(addVal)
+//   }else{
+//     alert('Cannot be a number greater than 20')
+//   }
 
 }
 const removeValue =() =>{
