@@ -3,13 +3,19 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Card from './components/card.jsx'
-
+ 
+let name={
+  name:"Arfa",
+  age:21
+}
+let Arr=[1,2,3,4,5]
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+  
     <>
-    <Card />
-    <Card />
-    <Card />
+    <Card channel="chaiaurcode" check= "Eww" someObj={name} Array={Arr} />
+    <Card channel="reactwithhitesh" check="Hey" />
+    <Card channel="arfamunam" check="there!" />
     <h1 class="text-3xl font-bold underline">
    Arfa Munam Butt
   </h1>

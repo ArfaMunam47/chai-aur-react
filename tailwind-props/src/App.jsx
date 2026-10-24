@@ -5,6 +5,12 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
+
+   let name = {
+    firstName: "Arfa",
+    lastName: "Munam"
+  }
+//  let arr= ["Arfa", "Munam", "Butt"]
   const [count, setCount] = useState(0)
 
   return (

@@ -1,13 +1,15 @@
 import React from 'react'
 
-function card() {
+  function card({channel, check}) {
+console.log(channel)
+console.log(check)
   return (
     <>
       <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
   <img class="size-12 shrink-0" src="https://cdn-icons-png.flaticon.com/512/5962/5962463.png" alt="ChitChat Logo" />
   <div>
-    <div class="text-xl font-medium text-black dark:text-white">ChitChat</div>
-    <p class="text-gray-500 dark:text-gray-400">You have a new message!</p>
+    <div class="text-xl font-medium text-black dark:text-white"> C{check}</div>
+    <p class="text-gray-500 dark:text-gray-400">{channel} {check}  You have a new message!</p>
   </div>
 </div>
 
@@ -76,9 +78,9 @@ function card() {
         </svg>
 
         <div class="mt-1.5 sm:mt-0">
-          <p class="text-gray-500">Bathroom</p>
+          <p class="text-gray-500">Bathroom  </p>
 
-          <p class="font-medium">2 rooms</p>
+          <p class="font-medium">2 rooms{check}</p>
         </div>
       </div>
 
@@ -110,6 +112,6 @@ function card() {
 </a>
  </>
   )
-}
 
+  }
 export default card
